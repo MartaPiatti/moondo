@@ -1,0 +1,262 @@
+@font-face {
+  font-family: Tusker4500-medium;
+  src: url(assets/TuskerGrotesk-4500Medium.ttf);
+}
+
+@font-face {
+  font-family: Tusker4600-semibold;
+  src: url(assets/TuskerGrotesk-4600Semibold.ttf);
+}
+
+@font-face {
+  font-family: Tusker5500-medium;
+  src: url(assets/TuskerGrotesk-5500Medium.ttf);
+}
+
+@font-face {
+  font-family: Tusker6500-medium;
+  src: url(assets/TuskerGrotesk-6500Medium.ttf);
+}
+
+/* html {
+  font-size: 6.25%;
+} */
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  background-color: #091c22;
+}
+
+.onda {
+  margin-top: 50vh;
+}
+
+.background-img,
+.onda {
+  position: absolute;
+  /* top: 10vw; */
+  width: 100%;
+  object-fit: cover;
+}
+
+.luna {
+  left: 100vw;
+  top: -10vw;
+  position: absolute;
+  height: auto;
+  width: 12%;
+  object-fit: cover;
+
+  transform: translateZ(-10px) scale(2);
+}
+
+.giallo {
+  color: #fffa47;
+}
+
+.logo {
+  position: absolute;
+  object-fit: cover;
+  width: 20vw;
+  height: auto;
+  margin-left: 6.35vw;
+  margin-top: 3vw;
+}
+
+.immersive-vacation {
+  position: absolute;
+  margin-top: 8vw;
+  left: 50%;
+  transform: translateX(-50%) translateZ(-5px) scale(1.5);
+
+  text-align: center;
+  font-family: Tusker4500-medium;
+  width: 100%;
+  font-size: 11vw;
+  color: white;
+}
+
+.non-header {
+  position: relative;
+  margin-top: 100vh;
+  background-color: #091c22;
+  transform: translateZ(0px);
+}
+
+.intro-text {
+  color: white;
+  font-family: "articulat-cf", sans-serif;
+  font-style: normal;
+  font-size: 4rem;
+  margin-bottom: 25rem;
+  width: 73%;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  margin-inline: auto;
+  font-family: Tusker4500-medium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7.1875rem;
+
+  color: white;
+  text-align: center;
+  width: fit-content;
+}
+
+p {
+  font-size: 1.6875rem;
+  font-family: Articulat-CF;
+  color: white;
+}
+
+a {
+  font-size: 1.6875rem;
+  font-family: Articulat-CF;
+  color: white;
+  text-decoration: none;
+  vertical-align: bottom;
+  margin-left: 1rem;
+}
+
+button {
+  background-color: #01a7bb;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.4vw;
+  position: absolute;
+  left: 6.35vw;
+  width: 11rem;
+  height: 3rem;
+  font-family: Tusker4500-medium;
+  font-size: 1.5vw;
+  letter-spacing: 0.05vw;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+#cards-container {
+  /* width: 23em; */
+  min-height: 300px;
+  overflow-x: hidden;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-family: Articulat-CF;
+  color: white;
+  font-weight: bold;
+}
+
+/* the slides */
+.slick-slide {
+  margin: 0 0.8em;
+}
+
+/* the parent */
+.slick-list {
+  margin: 0 -0.8em;
+}
+
+.sea-level-div {
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(5, 27, 34, 1) 10%, rgba(5, 27, 34, 1) 100%);
+}
+
+.slick-slide {
+  width: 300px;
+}
+
+.changing-big-text {
+  margin-top: 0;
+  font-size: 10rem;
+  margin-bottom: 0;
+}
+
+.video {
+  object-fit: cover;
+  width: 66%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#video-about {
+  object-fit: cover;
+  /* width: 100%; */
+  /* margin: auto; */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transform: translateZ(-15px) scale(2.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item-left {
+  flex: 50%;
+  margin-left: 6.35vw;
+  margin-right: 1.25vw;
+}
+
+.flex-item-right {
+  flex: 50%;
+  margin-right: 6.35vw;
+  margin-left: 1.25vw;
+}
+
+#video-youtube {
+  width: 100%;
+  height: 56.25%;
+  margin-top: 15rem;
+  border: none;
+}
+
+#rotazioneLuna {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0rem;
+}
+
+footer {
+  padding-top: 5rem;
+  background-color: #091c22;
+  padding-bottom: 5rem;
+}
+
+/* .contacts {
+ padding-left: 4rem;
+} */
+
+/* @media (max-width: 1350px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  .intro-text {
+    font-size: 2em;
+    height: 100%;
+  }
+} */
