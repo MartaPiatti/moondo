@@ -4,19 +4,19 @@ let videoActivity;
 let carouselCoste;
 let carouselActivity;
 let videoCosteEvents = [
-  {time: 1, triggered: true, slide: 0},
-  {time: 2.7, triggered: true, slide: 1},
-  {time: 5, triggered: true, slide: 2},
-  {time: 7, triggered: true, slide: 3},
+  { time: 1, triggered: true, slide: 0 },
+  { time: 2.2, triggered: true, slide: 1 },
+  { time: 4.4, triggered: true, slide: 2 },
+  { time: 5.9, triggered: true, slide: 3 },
   // { time: 6, triggered: false },
 ];
 
 let videoActivityEvents = [
-  {time: 1.3, triggered: true, slide: 0},
-  {time: 2.6, triggered: true, slide: 1},
-  {time: 4.2, triggered: true, slide: 2},
-  {time: 5.8, triggered: true, slide: 3},
-  {time: 7.1, triggered: true, slide: 4},
+  { time: 1.3, triggered: true, slide: 0 },
+  { time: 2.6, triggered: true, slide: 1 },
+  { time: 4.2, triggered: true, slide: 2 },
+  { time: 5.8, triggered: true, slide: 3 },
+  { time: 7.1, triggered: true, slide: 4 },
 ];
 
 $(() => {
@@ -26,35 +26,52 @@ $(() => {
   carouselActivity = $("#changing-activity");
 
   $("#cards-container").slick({
+    // autoplay: true,
+    // autoplaySpeed: 1000,
+    // speed: 1000,
+    // arrows: false,
+    // initialSlide: 6,
+    // infinite: true,
+    // slidesToShow: 5,
+    // variableWidth: true,
+    // focusOnSelect: true,
+    // centerMode: true,
+
     autoplay: true,
     autoplaySpeed: 1000,
     speed: 1000,
     arrows: false,
     initialSlide: 6,
     infinite: true,
-    slidesToShow: 5,
-    variableWidth: true,
-    focusOnSelect: true,
+    slidesToShow: 4,
 
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 800,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 650,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
+          centerMode: true,
         },
       },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        },
+      },
+      // {
+      //   breakpoint: 500,
+      //   settings: {
+      //     slidesToShow: 2,
+      //   },
+      // },
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object

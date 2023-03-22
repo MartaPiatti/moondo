@@ -1,0 +1,405 @@
+@font-face {
+  font-family: Tusker4500-medium;
+  src: url(assets/TuskerGrotesk-4500Medium.ttf);
+}
+
+@font-face {
+  font-family: Tusker4600-semibold;
+  src: url(assets/TuskerGrotesk-4600Semibold.ttf);
+}
+
+@font-face {
+  font-family: Tusker5500-medium;
+  src: url(assets/TuskerGrotesk-5500Medium.ttf);
+}
+
+@font-face {
+  font-family: Tusker6500-medium;
+  src: url(assets/TuskerGrotesk-6500Medium.ttf);
+}
+
+/* html {
+  font-size: 6.25%;
+} */
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  background-color: #051b22;
+}
+
+.onda {
+  margin-top: 50vh;
+}
+
+.background-img,
+.onda {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+
+.luna {
+  left: 100vw;
+  top: -10vw;
+  position: absolute;
+  height: auto;
+  width: 12%;
+  object-fit: cover;
+
+  transform: translateZ(-10px) scale(2);
+}
+
+.giallo {
+  color: #fffa47;
+}
+
+.logo {
+  position: absolute;
+  object-fit: cover;
+  width: 7vw;
+  height: auto;
+  margin-left: 6.35vw;
+  margin-top: 3vw;
+}
+
+.immersive-vacation {
+  position: absolute;
+  /* margin-top: 19vw; */
+  left: 50%;
+  transform: translateX(-50%) translateZ(-5px) scale(1.5);
+
+  text-align: center;
+  font-family: Tusker4500-medium;
+  width: 100%;
+  font-size: 11vw;
+  color: white;
+}
+
+.non-header {
+  position: relative;
+  margin-top: 120vh;
+  /* background-color: #091c22; */
+}
+
+.non-header-about {
+  position: relative;
+  margin-top: 100vh;
+  background-color: rgb(7, 31, 39);
+  transform: translateZ(0px);
+}
+
+.intro-text {
+  color: white;
+  font-family: "articulat-cf", sans-serif;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 25rem;
+  width: 74%;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  margin-inline: auto;
+  font-family: Tusker4500-medium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8vw;
+
+  color: white;
+  text-align: center;
+  width: fit-content;
+}
+
+.br-responsive {
+  display: none;
+}
+
+.testi {
+  font-size: 1.6875rem;
+  font-family: Articulat-CF;
+  color: white;
+}
+
+.contacts {
+  font-size: 0.75rem;
+  font-family: Articulat-CF;
+  color: white;
+  vertical-align: text-bottom;
+  padding-bottom: 0.5rem;
+}
+
+footer a {
+  font-size: 1rem;
+  font-family: Articulat-CF;
+  color: white;
+  text-decoration: none;
+  vertical-align: auto;
+  margin-left: 1rem;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-family: Articulat-CF;
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  background-color: #01a7bb;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.4rem;
+  position: absolute;
+  left: 6.35vw;
+  width: 13rem;
+  height: 3.5rem;
+  top: 40vw;
+  font-family: Tusker4500-medium;
+  font-size: 1.5vw;
+  letter-spacing: 0.05vw;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.city-package-div {
+  /* background: linear-gradient(180deg, #091c22 0%, rgba(5, 27, 34, 1) 10%, rgba(5, 27, 34, 1) 100%); */
+  background-color: aqua;
+}
+
+#cards-container {
+  /* width: 23em; */
+  min-height: 300px;
+  overflow-x: hidden;
+}
+
+/* the slides */
+.slick-slide {
+  margin: 0 0.8em;
+}
+
+/* the parent */
+.slick-list {
+  margin: 0 -0.8em;
+}
+
+.sea-level-div {
+  position: relative;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  /* background: linear-gradient(180deg, rgba(0, 23, 29, 1) 0%, rgba(5, 27, 34, 1) 10%, rgba(5, 27, 34, 1) 100%); */
+}
+
+.absolute-h1-coste {
+  position: absolute;
+  top: 3rem;
+  z-index: 2;
+}
+
+.slick-slide {
+  width: 300px;
+}
+
+.changing-big-text {
+  margin-top: 0;
+  font-size: 12vw;
+  margin-bottom: 0;
+}
+
+#video-coste {
+  /* margin-top: 10rem; */
+  object-fit: cover;
+  width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+#video-attivita {
+  object-fit: cover;
+  width: 66%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.video-luna {
+  object-fit: cover;
+  width: 60%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#video-about {
+  object-fit: cover;
+  /* width: 100%; */
+  /* margin: auto; */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transform: translateZ(-15px) scale(2.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item-left {
+  flex: 50%;
+  margin-left: 6.35vw;
+  margin-right: 1.25vw;
+}
+
+.flex-item-right {
+  flex: 50%;
+  margin-right: 6.35vw;
+  margin-left: 1.25vw;
+}
+
+#video-youtube {
+  margin-top: 15rem;
+  border: none;
+}
+
+#rotazioneLuna {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0rem;
+  display: block;
+}
+
+footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 6.35vw;
+}
+
+.extra-text {
+  display: block;
+}
+
+#div-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 15rem;
+}
+
+@media (max-width: 1000px) {
+  .intro-text {
+    font-size: 2rem;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-item-right {
+    margin-left: 6.35vw;
+  }
+
+  .flex-item-left {
+    margin-right: 6.35vw;
+  }
+
+  .testi {
+    font-size: 1.5rem;
+  }
+
+  .extra-text {
+    display: none;
+  }
+
+  #video-youtube {
+    width: 100%;
+    border: none;
+  }
+
+  #rotazioneLuna {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 13vw;
+    margin-top: 4vw;
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 11vw;
+  }
+
+  .changing-big-text {
+    font-size: 15vw;
+  }
+
+  .absolute-h1-coste {
+    top: 0;
+    left: 10%;
+  }
+
+  .br-responsive {
+    display: inline;
+  }
+
+  .immersive-vacation {
+    font-size: 22vw;
+  }
+
+  #video-coste {
+    margin-left: 70%;
+  }
+
+  .activity-div {
+    position: relative;
+  }
+
+  #video-attivita {
+    width: 300%;
+    z-index: 1;
+  }
+
+  .h1-attivita {
+    position: absolute;
+    z-index: 2;
+    margin-top: 2.5rem;
+  }
+
+  .testi {
+    font-size: 1rem;
+  }
+}
